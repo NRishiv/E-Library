@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header .logo {
+    /* border: 2px solid green; */
+    padding: 15px 0px 0px 10px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+}
+
+.nav {
+    position: relative;
+    margin-right: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.nav a:before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.nav a:hover:before {
+    width: 100%;
+}
+
+.back {
+    z-index: 000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.back img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    /* mix-blend-mode: normal; */
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.content {
+    z-index: 555;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+}
+
+.faq-heading {
+    padding: 80px 160px;
+    /* margin-bottom: 20px; */
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* Style the buttons that are used to open and close the faq-page body */
+
+.faq-page {
+    /* background-color: rgb(92, 79, 79); */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    /* text-align: center; */
+    width: 50%;
+    padding: auto;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.faq-page:hover {
+    background-color: #a89b608c;
+}
+
+
+/* Style the faq-page panel. Note: hidden by default */
+
+.faq-body {
+    padding: 0 18px;
+    background-color: rgba(207, 183, 74, 0.781);
+    display: none;
+    /* overflow: hidden; */
+}
+
+.faq-page:after {
+    content: '\02795';     /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";      /* Unicode character for "minus" sign (-) */
+}

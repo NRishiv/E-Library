@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header .logo {
+    /* border: 2px solid green; */
+    padding: 15px 0px 0px 10px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav {
+    position: relative;
+    margin-right: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.nav a:before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.nav a:hover:before {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login_box {
+    position: absolute;
+    width: 500px;
+    height: 480px;
+    left: 925px;
+    top: 240px;
+    background: #ffffff;
+    border-radius: 45.7646px;
+    /* align-content: center; */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.login_box h4 {
+    margin: 35px 22px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53.5781px;
+    line-height: 30px;
+}
+
+.button-box {
+    /* width: 249.18px; */
+    /* width: 272px; */
+    width: 293.7px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #fac0aa;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    background: transparent;
+    width: 150px;
+    border: 0px;
+    margin: 0px -3px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bolder;
+    /* color: #852BCB; */
+    /* background-color: #dcc3f0; */
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition-duration: .4s;
+    /* transition-property: width; */
+}
+
+
+/* #btn:hover {
+    width: 100px;
+} */
+
+#student {
+    left: 50px;
+}
+
+#admin {
+    left: 550px;
+}
+
+.google img {
+    position: relative;
+    margin: 15px auto;
+    border-width: 1px;
+    width: 89px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 25px;
+    width: 60%;
+}
+
+#or {
+    background: #fff;
+    width: 20px;
+    margin: -19px auto 10px
+}
+
+form {
+    position: absolute;
+    /* height:100px; */
+    width: 100%;
+    /* line-height: 150cm; */
+    margin: 0px;
+    /* font-family:; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ff0404; */
+    /* justify-content: space-evenly; */
+    transition: .4s;
+}
+
+form input {
+    /* text-align: center; */
+    padding: 8px 17px;
+    /* width: 200px; */
+    margin: 12px 180px 12px 0px;
+    /* outline:; */
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #999;
+    font-family: 'Courier New', Courier, monospace;
+    font: bold;
+    font-size: large;
+    /* border-radius: 600.521px; */
+    background: transparent;
+}
+
+form button {
+    padding: 12px 0px;
+    /* display: flex; */
+    width: 100px;
+    margin: 5px 150px;
+    border-radius: 600.521px;
+    background-color: #5f85e7;
+    cursor: pointer;
+    /* display:block; */
+    /* background: linear-gradient(to right,#ff105f,#ffad06); */
+}
+
+#bypass {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.3945px;
+    margin: 0px 0 0 15px;
+    color: #f70505;
+    text-align: center;
+}
+
+
+/* footer{
+    position:relative;
+
+    width: 1519px;
+    height: 106px;
+    background: #ffffff;
+} */

@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    /* width: 1519px; */
+    height: 106px;
+    z-index: 10;
+}
+
+header img {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    left: 50%;
+    top: 5.5px;
+}
+
+header h1 {
+    position: relative;
+    top:-8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+main img {
+    position: absolute;
+    left: -120px;
+    top: 0px;
+    width: 108%;
+    height: 100%;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+

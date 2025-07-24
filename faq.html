@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-library | FAQ PAGE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://www.bmsce.ac.in/">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" alt="logo">
+        </a>
+        <h1>STUDENT E-LIBRARY PORTAL</h1>
+        <!-- <div class="btnlogin">
+            <a href="login.html"><button>Login/Sign up</button></a>
+        </div> -->
+
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="AboutUs.html">About us</a>
+            <a href="donat.html">Donate us!</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="faq.html">FAQ</a>
+
+        </div>
+    </header>
+    <main>
+        <div class="back">
+            <img src="https://swall.teahub.io/photos/small/16-168437_wallpaper-books-library-shelves-lighting-library-background-wallpaper.jpg">
+        </div>
+        <div class="content">
+            <h1 class="faq-heading"><u>FAQ'S</u></h1>
+            <section class="faq-container">
+                <div class="faq-one">
+
+                    <!-- faq question -->
+                    <h1 class="faq-page">Does this site has notes for all semesters?</h1>
+
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Yes, all semester notes and their respective question papers are available.</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+
+                <div class="faq-two">
+
+                    <!-- faq question -->
+                    <h1 class="faq-page">Do we need to have a registered college email id?</h1>
+
+                    <!-- faq answer -->
+
+                    <div class="faq-body">
+                        <p>Yes, the user needs to have a registered college email id because this site is exclusive to bmsce personnel.</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+
+
+                <div class="faq-three">
+
+                    <!-- faq question -->
+                    <h1 class="faq-page">I forgot my password so how am I gonna recover it?</h1>
+
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>On the main log in page there is a section for forgot password click on that you will be sent a link on your registered college email id.</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <script>
+        var faq = document.getElementsByClassName("faq-page");
+        var i;
+        for (i = 0; i < faq.length; i++) {
+            faq[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var body = this.nextElementSibling;
+                if (body.style.display === "block") {
+                    body.style.display = "none";
+                } else {
+                    body.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+
+</html>

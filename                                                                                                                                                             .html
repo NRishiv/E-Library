@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>E-library | LOGIN</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://www.bmsce.ac.in/">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" alt="logo">
+        </a>
+            <h1>STUDENT E-LIBRARY PORTAL</h1>
+        <!-- <div class="btnlogin">
+            <a href="login.html"><button>Login/Sign up</button></a>
+        </div> -->
+
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="AboutUs.html">About us</a>
+            <a href="donat.html">Donate us!</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="faq.html">FAQ</a>
+
+        </div>
+    </header>
+    <main>
+        <video id="bgvid" src="B.M.S College of Engineering Central Library.mp4" autoplay muted loop></video>
+        <div class="login_box">
+            <h4>HELLO THERE!</h4>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="student()">Student/Faculty</button>
+                <button type="button" class="toggle-btn" onclick="faculty()">ADMIN</button>
+            </div>
+            <a href="https://accounts.google.com/signin/v2/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                <div class="google"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" /></div>
+            </a>
+            <hr>
+            <p id="or">OR</p>
+            <form id="student">
+                <input type="email" id="username" placeholder="e-MAIL ID" />
+                <input type="password" id="password" placeholder="PASSWORD" />
+                <button type="submit" onclick="validate()">LOGIN</button>
+                <!-- <a href="nav_page.html"><button>LOGIN</button></a> -->
+                <p>New here?<a id="bypass" href="signup.html">CREATE ACCOUNT</a></p>
+            </form>
+            <form id="admin" target="_self" method="post" autocomplete="on">
+                <input type="email" id="admin-email" placeholder="e-MAIL ID" required />
+                <input type="password" id="admin-password" placeholder="PASSWORD" required />
+                <button type="submit" onclick="advali()">LOGIN</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        document.getElementById('bgvid').playbackRate = 0.6;
+        // document.getElementById('bgvid').currentTime = 12;
+
+        var x = document.getElementById("student");
+        var y = document.getElementById("admin");
+        var z = document.getElementById("btn");
+
+        function faculty() {
+            x.style.left = "-400px"; //1st form after
+            y.style.left = "50px"; //2nd form after
+            z.style.left = "145px"; //inside toggle box
+        }
+
+        function student() {
+            x.style.left = "50px"; //1st form back
+            y.style.left = "550px"; //2nd form
+            z.style.left = "0px"; //inside toggle box
+        }
+    </script>
+</body>
+
+</html>
