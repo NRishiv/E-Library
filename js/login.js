@@ -18,7 +18,7 @@ function validate() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     validateEmail(username);
-    if (key==1 && password == "admin") {
+    if (key==1) {
         window.open("nav_page.html");
     }
     else {
@@ -37,7 +37,3 @@ function advali(){
         alert("login failed!\nPlease try again...\n(If you are a student/faculty, then please try student/faculty login.");
 }
 }
-      // https://e-libraryportelproject.on.drv.tw/Website/nav_page.html" ,  // document.getElementById("namelocation").innerHTML="<a href='C:/Users/Pujith/Desktop/New/nav_page.html'></a>";
-        // open("www.google.com");
-        // console.log("hi");
-        // alert("true")
