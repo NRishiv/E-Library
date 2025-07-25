@@ -20,7 +20,6 @@ function validate() {
     validateEmail(username);
     if (key==1 && password == "admin") {
         window.open("nav_page.html");
-        // return true;
     }
     else {
         alert("login failed!\nPlease try again...");

@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>E-library | LOGIN</title>
-    <link rel="stylesheet" href="login.css" />
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js" defer></script>
 </head>
 
 <body>
@@ -14,10 +14,6 @@
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/BMS_College_of_Engineering.svg/1200px-BMS_College_of_Engineering.svg.png" alt="logo">
         </a>
             <h1>STUDENT E-LIBRARY PORTAL</h1>
-        <!-- <div class="btnlogin">
-            <a href="login.html"><button>Login/Sign up</button></a>
-        </div> -->
-
 
         <div class="nav">
             <a href="index.html">Home</a>
@@ -29,7 +25,7 @@
         </div>
     </header>
     <main>
-        <video id="bgvid" src="B.M.S College of Engineering Central Library.mp4" autoplay muted loop></video>
+        <video id="bgvid" src="assets/videos/B.M.S College of Engineering Central Library.mp4" autoplay muted loop></video>
         <div class="login_box">
             <h4>HELLO THERE!</h4>
             <div class="button-box">
@@ -46,7 +42,6 @@
                 <input type="email" id="username" placeholder="e-MAIL ID" />
                 <input type="password" id="password" placeholder="PASSWORD" />
                 <button type="submit" onclick="validate()">LOGIN</button>
-                <!-- <a href="nav_page.html"><button>LOGIN</button></a> -->
                 <p>New here?<a id="bypass" href="signup.html">CREATE ACCOUNT</a></p>
             </form>
             <form id="admin" target="_self" method="post" autocomplete="on">
@@ -59,7 +54,6 @@
     <footer></footer>
     <script>
         document.getElementById('bgvid').playbackRate = 0.6;
-        // document.getElementById('bgvid').currentTime = 12;
 
         var x = document.getElementById("student");
         var y = document.getElementById("admin");
