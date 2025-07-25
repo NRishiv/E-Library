@@ -49,8 +49,8 @@ function validateForm() {
     //PASSWORD
     if(passwordInput.value.trim()==''){
         setError(passwordInput, 'Password can not be empty');
-    }else if(passwordInput.value.trim().length <6 || passwordInput.value.trim().length >20){
-        setError(passwordInput, 'Password min 6 max 20 charecters');
+    }else if(passwordInput.value.trim().length <4 || passwordInput.value.trim().length >20){
+        setError(passwordInput, 'Password min 4 max 20 charecters');
     }else {
         setSuccess(passwordInput);
     }
